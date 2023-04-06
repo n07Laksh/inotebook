@@ -11,8 +11,6 @@ import About from './component/About';
 import NoteState from './context/Notes/notesState';
 
 
-
-
 function App() {
   return (
     <>

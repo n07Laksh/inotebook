@@ -1,20 +1,40 @@
-import React, { useContext, useEffect } from 'react'
-import NoteContext from '../context/Notes/notesContext'
+import React, {useRef, useEffect, useState} from 'react'
 
 const About = () => {
-  const user = useContext(NoteContext)
+  // const [inputValue, setInputValue] = useState("");
+  // const count = useRef(0);
+
+  // useEffect(() => {
+  //   count.current = count.current + 1;
+  // });
+
+  const val = useRef("");
+  console.log(val)
+  const val2 = useRef("");
+  console.log(val2)
+
   
-  useEffect(() => {
-    return () => {
-      user.update(2000);
-    }
-    // eslint-disable-next-line
-  }, []);
-  
+  const AddValue = () => {
+    val.current.innerHTML = "Hii Buddy"
+    val2.current.innerHTML = "HaHa"
+    console.log(val)
+    console.log(val2)
+  }
   
   return (
-    <div>
-      <h2>Hello My Name is {user.state.name} and I'm in {user.state.class} Class</h2>
+    <div className='container'>
+      <h2>Hello My Name is...</h2>
+      {/* <input 
+      type="text"
+      value={inputValue}
+      onChange={(e) => setInputValue(e.target.value)}
+      />
+      <p>rendered: {count.current}</p> */}
+      <br/>
+      <button onClick={AddValue}>Add</button>
+
+      <h2 ref={val}>hello</h2>
+      <h3 ref={val2}></h3>
     </div>
   )
 }
