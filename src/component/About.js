@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react'
+import React, {useRef} from 'react'
 
 const About = () => {
   // const [inputValue, setInputValue] = useState("");
@@ -34,7 +34,7 @@ const About = () => {
       <button onClick={AddValue}>Add</button>
 
       <h2 ref={val}>hello</h2>
-      <h3 ref={val2}></h3>
+      <h3 ref={val2}> </h3>
     </div>
   )
 }
