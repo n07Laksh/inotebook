@@ -23,7 +23,7 @@ const AddNote = () => {
             <form className="w-50">
                 <div className="form-group">
                     <label htmlFor="title">Title</label>
-                    <input type="email" name='title' className="form-control" id="title" aria-describedby="emailHelp" onChange={inputChange} />
+                    <input type="text" name='title' className="form-control" id="title" aria-describedby="emailHelp" onChange={inputChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="description">Description</label>

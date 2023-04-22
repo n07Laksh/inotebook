@@ -9,6 +9,7 @@ import Navabar from './component/Navabar';
 import Home from './component/Home';
 import About from './component/About';
 import NoteState from './context/Notes/notesState';
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
 
 function App() {
