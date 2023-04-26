@@ -23,10 +23,11 @@ function Navabar() {
                                 <Link className={`nav-a text-${location.pathname==="/"?"success":"light"}`} to="/"><i className="fa fa-home"></i> Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-a text-${location.pathname==="/about"?"success":"light"}`} to="about">About</Link>
+                                <Link className={`nav-a text-${location.pathname==="/about"?"success":"light"}`} to="/about">About</Link>
                             </li>
-
                         </ul>
+                        <Link className="btn btn-primary mx-1" to="/login">Login</Link>
+                        <Link className="btn btn-primary mx-1" to="/signup">SignUp</Link>
                     </div>
                 </nav>
             </div>
